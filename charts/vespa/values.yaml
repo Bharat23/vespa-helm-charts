@@ -133,3 +133,9 @@ volumeClaimTemplates:
        resources:
          requests:
            storage: 1Gi    
+
+pdb:
+  enabled: true
+  name: vespa-pdb
+  budget:
+    minAvailable: 1
